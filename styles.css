@@ -1,5 +1,21 @@
 body {
-    background-color: #014751;
+    /* O caminho deve apontar para onde você salvou a imagem */
+    background-image: url('imagens/Gemini_Generated_Image_uon53zuon53zuon5.png');
+    
+    /* Faz a imagem cobrir a tela inteira sem sobrar espaços */
+    background-size: cover;
+    
+    /* Mantém o fundo fixo enquanto você rola a página */
+    background-attachment: fixed;
+    
+    /* Centraliza a imagem */
+    background-position: center;
+    
+    /* Evita que a imagem se repita caso a tela seja muito grande */
+    background-repeat: no-repeat;
+    
+    /* Define uma cor de fundo caso a imagem demore a carregar */
+    background-color: #0f3d3e; 
 }
 
 a{
@@ -22,10 +38,39 @@ a:hover{
 }
 
 header{
-    height: 70px;
+   height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;   
+    justify-content: space-between; /* Empurra o Esportes para um lado e o resto para o outro */
+    padding: 0 50px; /* Dá um espaço nas laterais da tela */   
+}
+
+.container-direita {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaço entre os links de texto e os ícones */
+}
+
+.nav-botoes {
+    display: flex;
+    gap: 15px; /* Espaço entre LOGIN e CADASTRO */
+}
+
+/* Estilo padrão para seus botões (baseado no que você já tem) */
+.btn-nav {
+    color: #08353c;
+    background-color: #5edec6;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 5px 5px #147280;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #062c31;
+    color: gold;
 }
 
 .social-media{
